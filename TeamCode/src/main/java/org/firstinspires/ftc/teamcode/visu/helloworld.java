@@ -1,6 +1,13 @@
 package org.firstinspires.ftc.teamcode.visu;
 
-public class helloworld {
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
+@TeleOp(name= "helloworldAmelia")
+public class helloworld extends LinearOpMode {
+    @Override
+    public void runOpMode() throws InterruptedException {
+
+    }
 
 }
