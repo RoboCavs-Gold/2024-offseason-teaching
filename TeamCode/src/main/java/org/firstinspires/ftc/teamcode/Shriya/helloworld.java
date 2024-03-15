@@ -45,7 +45,7 @@ public class helloworld extends LinearOpMode {
                               br.setPower(brPower);
                           }
 
-                      }
+                      } // end of while
         }
     }
 }
