@@ -26,24 +26,24 @@ public class helloworld extends LinearOpMode {
         while(opModeIsActive() && !isStopRequested()) {
             //code will run in here while the opmode is active  waitForStart();
                       while (opModeIsActive() && !isStopRequested()) {
-                       //code will run in here while the opmode is active
-                       double flPower = +gamepad1.left_stick_x - gamepad1.left_stick_y + gamepad1.right_stick_x;
-                       double frPower = -gamepad1.left_stick_x - gamepad1.left_stick_y - gamepad1.right_stick_x;
-                       double blPower = -gamepad1.left_stick_x - gamepad1.left_stick_y + gamepad1.right_stick_x;
-                       double brPower = +gamepad1.left_stick_x - gamepad1.left_stick_y - gamepad1.right_stick_x;
+                          //code will run in here while the opmode is active
+                          double flPower = +gamepad1.left_stick_x - gamepad1.left_stick_y + gamepad1.right_stick_x;
+                          double frPower = -gamepad1.left_stick_x - gamepad1.left_stick_y - gamepad1.right_stick_x;
+                          double blPower = -gamepad1.left_stick_x - gamepad1.left_stick_y + gamepad1.right_stick_x;
+                          double brPower = +gamepad1.left_stick_x - gamepad1.left_stick_y - gamepad1.right_stick_x;
 
-                          if(gamepad1.left_bumper) {
-                              fl.setPower(flPower /3);
-                              fr.setPower(frPower /3);
-                              bl.setPower(blPower /3);
-                              br.setPower(brPower /3);
+                          if (gamepad1.left_bumper) {
+                              fl.setPower(flPower / 3);
+                              fr.setPower(frPower / 3);
+                              bl.setPower(blPower / 3);
+                              br.setPower(brPower / 3);
 
-                              else
-                          fl.setPower(flPower);
-                          fr.setPower(frPower);
-                          bl.setPower(blPower);
-                          br.setPower(brPower);
-                              {
+                          } else {
+                              fl.setPower(flPower);
+                              fr.setPower(frPower);
+                              bl.setPower(blPower);
+                              br.setPower(brPower);
+                          }
 
                       }
         }
