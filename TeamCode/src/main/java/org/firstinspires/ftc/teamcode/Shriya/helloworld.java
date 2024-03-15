@@ -32,18 +32,18 @@ public class helloworld extends LinearOpMode {
                        double blPower = -gamepad1.left_stick_x - gamepad1.left_stick_y + gamepad1.right_stick_x;
                        double brPower = +gamepad1.left_stick_x - gamepad1.left_stick_y - gamepad1.right_stick_x;
 
+                          if(gamepad1.left_bumper) {
+                              fl.setPower(flPower /3);
+                              fr.setPower(frPower /3);
+                              bl.setPower(blPower /3);
+                              br.setPower(brPower /3);
+
+                              else
                           fl.setPower(flPower);
-                          if (gamepad1 = leftbumper);
-                          fl.setPower(/3);
                           fr.setPower(frPower);
-                          if (gamepad1 = rightbumper);
-                          fr.setPower(/3);
                           bl.setPower(blPower);
-                          if (gamepad1 = leftbumper);
-                          bl.setPower(/3);
                           br.setPower(brPower);
-                          if (gamepad1 = rightbumper);
-                          br.setPower(/3);
+                              {
 
                       }
         }
